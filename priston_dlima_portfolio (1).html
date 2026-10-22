@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priston Dlima | Data Scientist Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for smooth scrolling and clean focus states */
+        html { scroll-behavior: smooth; }
+        :focus-visible { outline: 2px solid #2563eb; outline-offset: 2px; }
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #1d4ed8, #3b82f6);
+        }
+        .project-card:hover .project-icon { transform: scale(1.1); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-primary-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100 transition-all">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-extrabold tracking-tighter text-gray-900">
+                        Priston<span class="text-primary-600">Dlima</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#profile" class="text-gray-600 hover:text-primary-600 transition-colors">Profile</a>
+                    <a href="#skills" class="text-gray-600 hover:text-primary-600 transition-colors">Skills</a>
+                    <a href="#education" class="text-gray-600 hover:text-primary-600 transition-colors">Education</a>
+                    <a href="#projects" class="text-gray-600 hover:text-primary-600 transition-colors">Projects</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://www.linkedin.com/in/priston-dlima-39952a249/" target="_blank" aria-label="LinkedIn" class="text-gray-500 hover:text-primary-600 transition-colors">
+                        <i class="fa-brands fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://github.com/Priston11" target="_blank" aria-label="GitHub" class="text-gray-500 hover:text-gray-900 transition-colors">
+                        <i class="fa-brands fa-github text-xl"></i>
+                    </a>
+                    <a href="mailto:dlimapriston@gmail.com" aria-label="Email" class="text-gray-500 hover:text-primary-600 transition-colors">
+                        <i class="fa-solid fa-envelope text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 max-w-6xl mx-auto flex flex-col items-center text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-sm font-semibold mb-6 border border-primary-100">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-500 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-600"></span>
+            </span>
+            Available for Opportunities
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 tracking-tight leading-tight">
+            Data Scientist & <br>
+            <span class="gradient-text">Insights Analyst</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
+            Consolidating complex datasets into reliable sources of truth. I specialize in predictive modelling, machine learning pipelines, and translating raw data into actionable business strategy.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
+            <a href="#projects" class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3.5 rounded-lg font-semibold transition-all shadow-lg shadow-primary-500/30 flex items-center justify-center gap-2">
+                View My Projects <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="mailto:dlimapriston@gmail.com" class="bg-white border border-gray-300 hover:border-gray-400 text-gray-800 px-8 py-3.5 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 shadow-sm">
+                Get In Touch <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Professional Profile Section -->
+    <section id="profile" class="py-20 bg-white border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                <div class="md:w-1/3">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-3">Professional Profile</h2>
+                    <div class="w-12 h-1.5 bg-primary-600 rounded-full"></div>
+                </div>
+                <div class="md:w-2/3 text-lg text-gray-600 leading-relaxed space-y-6">
+                    <p>
+                        I am a Data Science graduate with an <strong class="text-gray-900 font-semibold">MSc from the University of Hertfordshire</strong> and a BSc in Statistics and Economics. I bring a strong quantitative foundation and project-based experience across the entire data lifecycle.
+                    </p>
+                    <p>
+                        My core focus is on data preparation, exploratory analysis, feature engineering, and statistical modelling. I am passionate about producing accurate reporting, improving data quality, and translating complex information into clear insights that support business performance and resource planning.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">Core Competencies & Skills</h2>
+                <div class="w-12 h-1.5 bg-primary-600 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Skill Category 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-database text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Data Management & Quality</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-primary-500 mt-1"></i> Data cleansing & structured preparation</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-primary-500 mt-1"></i> Pipeline architecture (Medallion)</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-primary-500 mt-1"></i> Establishing single sources of truth</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-primary-500 mt-1"></i> Checking analytical inputs</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-chart-pie text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Analytics & BI</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-primary-500 mt-1"></i> Exploratory Data Analysis (EDA)</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-primary-500 mt-1"></i> Dashboarding (Power BI)</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-primary-500 mt-1"></i> Resource capacity analytics</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-primary-500 mt-1"></i> Statistical reasoning & trend ID</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-code text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Programming & Modelling</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-primary-500 mt-1"></i> Python (Pandas, NumPy, Matplotlib)</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-primary-500 mt-1"></i> Machine Learning (LightGBM, LSTM)</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-primary-500 mt-1"></i> Explainable AI (TreeSHAP)</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-primary-500 mt-1"></i> Microsoft Excel (Advanced) & SQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">Education</h2>
+                <div class="w-12 h-1.5 bg-primary-600 rounded-full"></div>
+            </div>
+            
+            <div class="space-y-8">
+                <!-- Degree 1 -->
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12 group">
+                    <div class="md:w-1/4 text-gray-500 font-semibold pt-1">
+                        2025 &mdash; 2026
+                    </div>
+                    <div class="md:w-3/4 pb-8 md:border-l-2 md:border-gray-200 md:pl-8 group-last:border-transparent">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-1">MSc Data Science</h3>
+                        <div class="text-lg text-primary-700 font-medium mb-3">University of Hertfordshire, UK</div>
+                        <p class="text-gray-600">
+                            Focused on advanced analytics, machine learning architecture, and professional team projects (GridSight UK).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Degree 2 -->
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12 group">
+                    <div class="md:w-1/4 text-gray-500 font-semibold pt-1">
+                        2022 &mdash; 2025
+                    </div>
+                    <div class="md:w-3/4 pb-8 md:border-l-2 md:border-gray-200 md:pl-8 group-last:border-transparent">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-1">BSc Statistics and Economics</h3>
+                        <div class="text-lg text-primary-700 font-medium mb-3">St. Agnes College, Mangalore, India</div>
+                        <p class="text-gray-600">
+                            Developed a rigorous quantitative foundation in statistical reasoning, economic modelling, and data interpretation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-white mb-3">Selected Projects</h2>
+                <div class="w-12 h-1.5 bg-primary-500 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 flex flex-col h-full hover:border-primary-500 transition-colors">
+                    <div class="h-48 bg-gradient-to-br from-primary-900 to-gray-900 p-8 flex flex-col justify-end relative overflow-hidden">
+                        <i class="fa-solid fa-solar-panel text-8xl absolute -right-6 -top-6 text-white/5 project-icon transition-transform duration-500"></i>
+                        <h3 class="text-2xl font-bold text-white relative z-10">GridSight UK</h3>
+                        <p class="text-primary-300 font-medium relative z-10">AI National Grid Solar Forecasting</p>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <p class="text-gray-400 text-sm mb-6 flex-1 leading-relaxed">
+                            Engineered a Medallion-style data pipeline to ingest 4 years of telemetry. Developed a stacked ensemble model (TCN-Q & LightGBM) to forecast solar capacity, achieving an 80.5% empirical coverage and a 32.1% skill score improvement. Built React/Streamlit diagnostic dashboards.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-gray-700 text-gray-300 text-xs rounded font-medium">Data Pipeline</span>
+                            <span class="px-2.5 py-1 bg-gray-700 text-gray-300 text-xs rounded font-medium">LightGBM</span>
+                            <span class="px-2.5 py-1 bg-gray-700 text-gray-300 text-xs rounded font-medium">TreeSHAP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 flex flex-col h-full hover:border-primary-500 transition-colors">
+                    <div class="h-48 bg-gradient-to-br from-indigo-900 to-gray-900 p-8 flex flex-col justify-end relative overflow-hidden">
+                        <i class="fa-solid fa-chart-line text-8xl absolute -right-6 -top-6 text-white/5 project-icon transition-transform duration-500"></i>
+                        <h3 class="text-2xl font-bold text-white relative z-10">Predictive Modelling</h3>
+                        <p class="text-indigo-300 font-medium relative z-10">Naruto Episode Dataset</p>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <p class="text-gray-400 text-sm mb-6 flex-1 leading-relaxed">
+                            Processed and structured a dataset covering more than 500 episodes. Engineered features for predictive analysis and successfully developed a Random Forest Regression model, interpreting model performance to achieve a strong Mean Absolute Error (MAE) of 0.21.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-gray-700 text-gray-300 text-xs rounded font-medium">Random Forest</span>
+                            <span class="px-2.5 py-1 bg-gray-700 text-gray-300 text-xs rounded font-medium">Regression</span>
+                            <span class="px-2.5 py-1 bg-gray-700 text-gray-300 text-xs rounded font-medium">Feature Eng.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 flex flex-col h-full hover:border-primary-500 transition-colors">
+                    <div class="h-48 bg-gradient-to-br from-teal-900 to-gray-900 p-8 flex flex-col justify-end relative overflow-hidden">
+                        <i class="fa-solid fa-circle-nodes text-8xl absolute -right-6 -top-6 text-white/5 project-icon transition-transform duration-500"></i>
+                        <h3 class="text-2xl font-bold text-white relative z-10">Dataset Clustering</h3>
+                        <p class="text-teal-300 font-medium relative z-10">Iris Dataset Investigation</p>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <p class="text-gray-400 text-sm mb-6 flex-1 leading-relaxed">
+                            Conducted exploratory data analysis (EDA) on the Iris dataset to identify inherent structures. Applied a Self-Organising Map (SOM) to cluster data effectively, and utilized rich visualisations to support the interpretation of outputs and similarities.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-gray-700 text-gray-300 text-xs rounded font-medium">EDA</span>
+                            <span class="px-2.5 py-1 bg-gray-700 text-gray-300 text-xs rounded font-medium">SOM</span>
+                            <span class="px-2.5 py-1 bg-gray-700 text-gray-300 text-xs rounded font-medium">Data Viz</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-12 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="text-2xl font-bold tracking-tighter">Priston<span class="text-primary-500">Dlima</span></span>
+                <p class="text-gray-500 text-sm mt-2">&copy; 2026 Priston Dlima. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="mailto:dlimapriston@gmail.com" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i> Email
+                </a>
+                <a href="https://www.linkedin.com/in/priston-dlima-39952a249/" target="_blank" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Priston11" target="_blank" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
